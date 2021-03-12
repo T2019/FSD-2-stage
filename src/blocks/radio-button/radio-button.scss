@@ -1,0 +1,70 @@
+.radio-btn__form_column2{
+    margin-top: 26px;
+}
+.radio-btn__wrap {
+    display: flex;
+}    
+.radio-btn__item-man{
+    margin-right: 25px;
+}
+.radio-btn__input{
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    appearance: none;/* убираем стандартные кружочки */
+    position: absolute;
+}
+.radio-btn{
+    display: flex;
+    flex-direction: column;
+}
+.radio-btn__label{
+    color: $dark-shade50;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+	padding-left: 25px;
+}
+.radio-btn__label:before {
+    content: "";
+    display: block; /* не в строку */
+    width: 20px; /* ширина блока */
+    height: 20px;/* высота блока */
+    border: 1px solid #ccc;/* рамка */
+    background-color: #fff; /* цвет фона */
+    border-radius: 50%;/* получаем круг */
+    position: absolute;/* расположен точно в родителе */
+    top: 0; /* расстояние от верха родителя */
+    left: 0;/* расстояние слева от родителя */
+    z-index: 1; /* на нижнем слое */
+    transition: border .1s linear;/* плавный переход для border */
+}
+.radio-btn__label:after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    opacity: 0; /* полностью прозрачный */
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 2;/* на верхнем слое */
+    transition: opacity .1s linear; /* плавный переход для opacity */
+}
+
+.radio-btn__input:checked + .radio-btn__label:before  {
+
+    border-color: $primary-color;
+    
+} 
+
+.radio-btn__input:checked + .radio-btn__label:after {
+   
+    opacity: 1;
+     
+}
+.active-btn{
+    color: red;
+}
+

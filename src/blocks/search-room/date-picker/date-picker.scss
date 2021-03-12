@@ -1,0 +1,129 @@
+.date-picker {
+    &-start {
+    }
+  
+    &-end {
+    }
+  }
+  
+  .calendar {
+    margin: 10px;
+    border: 1px solid #bbb;
+    max-width: 320px;
+  
+    &-header {
+      display: flex;
+      justify-content: space-between;
+        &-content{
+          font-family: $font-Quicksand;
+          font-size: $head-h2;
+          font-weight:700;
+        }
+    }
+    &-content {
+      margin: 10px;
+      &-header {
+        display: flex;
+        justify-content: center;
+        &-days-of-week {
+          min-width: 40px;
+          text-align: center;
+        }
+      }
+      &-footer-clear{
+        -webkit-appearance: none; //стили для кнопки очистить
+        -moz-appearance: none;
+             appearance: none;
+        border: 0;
+        border-radius: 0;
+        background:none;
+        color: #BC9CFF;
+        
+        font-family: $font-Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        
+        /* identical to box height */
+
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      &-dates {
+        margin-top: 10px;
+      }
+      &-week {
+        display: flex;
+        justify-content: center;
+      }
+      &-day {
+        cursor: pointer;
+        min-height: 40px;
+        min-width: 40px;
+        text-align: center;
+        display: inline;
+        line-height: 40px;
+        &__current {
+          color: white;
+          background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+          border-radius: 50%;
+        }
+        &__another {
+          color: #bbb;
+        }
+        &__selected {
+          color: #fff;
+          background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+          border-radius: 50%;
+        }
+        &__between {
+          position: relative;
+          &:before {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            opacity: 0.25;
+          }
+        }
+        &__start {
+          position: relative;
+          &:before{
+            z-index: -1;
+            content:"";
+            position:absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            opacity: 0.25;
+            width: 50%;
+          }
+        }
+        &__end{
+          position: relative;
+          &:before{
+            z-index: -1;
+            content:"";
+            position:absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background: transparent;
+            background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+            opacity: 0.25;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  

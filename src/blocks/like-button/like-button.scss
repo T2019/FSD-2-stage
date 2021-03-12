@@ -1,0 +1,45 @@
+.like-btn__form_column2{
+    margin-top: 37px;
+}
+.like-btn__wrap{
+    display: flex;
+    
+}
+.like-btn{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    color:  $dark-shade25;
+}
+.like-btn__button{
+    width: 40px;
+    height: 20px;
+    border: 1px solid $dark-shade25;
+    display: flex;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center
+}
+.like-btn__heart{
+    font-size: 10px;
+    
+    margin-left:5px;
+}
+.like-btn__val{
+    
+    font-size: 10px;
+    margin-left:5px;
+}
+.like-btn__active{
+    color:$primary-color;
+    border: 1px solid $primary-color;
+}
+
+.like-btn__button_color-changed{
+    border: 1px solid $primary-color;
+    color: $primary-color;
+}
+.like-btn__button__form_column2{
+    margin-left:10px;
+}

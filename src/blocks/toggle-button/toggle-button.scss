@@ -1,0 +1,68 @@
+.toggle-btn__item-form-column2{
+    margin-bottom: 10px;
+}
+.toggle-btn__form_column2{
+    margin-top: 30px;
+}
+.toggle-btn{
+    display: flex;
+    flex-direction: column;
+}
+.toggle-btn__item{
+	display:flex;
+    align-items: center;
+}
+.toggle-btn__label{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+.toggle-btn__input{
+    display: none;
+}
+.toggle-btn__slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid $dark-shade25;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.toggle-btn__slider:before{  
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 3px;
+  background-color: $dark-shade25;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.toggle-btn__input:checked + .toggle-btn__slider {
+    border: 1px solid $primary-color;
+}
+.toggle-btn__input:focus + .toggle-btn__slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+.toggle-btn__input:checked + .toggle-btn__slider:before{
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+    background-color: $primary-color;
+}
+.toggle-btn__text{
+    margin-left: 11px;
+}
+
+/*Скругление*/
+.toggle-btn__slider{
+    border-radius: 10px;
+}
+.toggle-btn__slider:before{
+    border-radius: 50%;
+}

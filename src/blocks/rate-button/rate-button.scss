@@ -1,0 +1,41 @@
+.form-column-2__rate-btn{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.rate-btn__list{
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+.rate-btn__item{
+    font-size:24px;
+    cursor: pointer;
+    color:$primary-color;
+    transition: .2s;
+    
+     
+}
+.rate-btn__item::after{
+    content: 'star_border'
+}
+.rate-btn__item:hover::after,
+.rate-btn__item:hover ~ .rate-btn__item::after{
+    content: 'star';
+    color:$primary-color
+}
+
+.rate-btn__list[data-total-value='1'] .rate-btn__item:nth-child(n + 5)::after,
+.rate-btn__list[data-total-value='2'] .rate-btn__item:nth-child(n + 4)::after,
+.rate-btn__list[data-total-value='3'] .rate-btn__item:nth-child(n + 3)::after,
+.rate-btn__list[data-total-value='4'] .rate-btn__item:nth-child(n + 2)::after,
+.rate-btn__list[data-total-value='5'] .rate-btn__item:nth-child(n + 1)::after {
+    color: $primary-color;
+    content: 'star'
+}
+.rate-btn__wrap{
+    display: flex;
+
+}
+.rate-btn__inner{
+    margin-left: 20px;
+}

@@ -1,0 +1,77 @@
+@import "./utils/libs.scss";
+@import "./utils/vars.scss";
+@import "./utils/mixins.scss";
+@import "./fonts.scss";
+@import "./utils/reset.scss";
+
+
+
+
+
+* {
+    font-family: $font-Montserrat;
+}
+
+body{
+    background-color:#fff;
+    
+    line-height:24px;
+    font-size: 14px;
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+h1{
+    font-family: $font-Montserrat;
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+    color:#1F2041;
+    font-weight: 700;
+    
+}   
+h2{
+    font-family: $font-Montserrat;
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    color:#1F2041;
+    
+}
+h3{
+    font-family: $font-Montserrat;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+    text-transform: uppercase;
+    color:#1F2041;
+}
+
+
+
+
+
+
+// нормалайзер
+
+//@import '../css/normalize.css';
+
+
+
+/*//block styles
+@import "../../blocks/color-block/color-block.scss";
+@import "../../blocks/text-size/text-size.scss";
+
+//pages styles
+
+@import "../../pages/color-and-type/color-and-type.scss";
+@import "../../pages/form-elements/form-elements.scss";
+*/
+
+
+

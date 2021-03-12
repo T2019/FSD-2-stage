@@ -1,0 +1,26 @@
+.dropdown-list-wrap.text-field
+    .dropdown-list__placeholder
+        span.dropdown-list__title Сколько гостей
+        img(src='./assets/img/dropdown-list-value.svg' class='dropdown-list__arrow')
+    .dropdown-list__items-wrap
+         
+    
+        mixin dropdown(category,ert)
+            .dropdown-list__item(id=ert)
+                p.dropdown-list__name=category
+                //- .dropdown-list__control-elements  
+                .dropdown-list__minus.dropdown-list__ctrl
+                    span -
+                .dropdown-list__value 
+                    span.value_int 0
+                .dropdown-list__plus.dropdown-list__ctrl
+                    span +
+                        
+        +dropdown('ВЗРОСЛЫЕ', 'adults')  
+        +dropdown('ДЕТИ', 'children')   
+        +dropdown('МЛАДЕНЦЫ', 'babies') 
+
+     
+        
+
+

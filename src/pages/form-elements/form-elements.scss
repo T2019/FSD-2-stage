@@ -1,0 +1,36 @@
+
+@import '../../assets/scss/main.scss';
+@import '../../blocks/text-field/text-field.scss';
+@import '../../blocks/dropDownList/dropDownList.scss';
+@import '../../blocks/maskedTextField/maskedTextField.scss';
+@import '../../blocks/text-field-hover-focused/text-field-hover-focused.scss';
+@import '../../blocks/datePicker/datepicker.scss';
+@import '../../../node_modules/air-datepicker/dist/css/datepicker.css';
+@import '../../blocks/checkbox-button/checkbox-button.scss';
+@import '../../blocks/radio-button/radio-button.scss';
+@import '../../blocks/toggle-button/toggle-button.scss';
+@import '../../blocks/like-button/like-button.scss';
+@import '../../blocks/rate-button/rate-button.scss';
+
+
+.form_column{
+    width:480px;
+    height: 700px;
+   
+}
+.form_column-1{
+    background-color: $dark-shade5;
+    padding: 140px 0 0 141px;
+}
+.form_column-2{
+    padding: 140px 0 0 107px;
+}
+.form_column-3{
+    
+}   
+.form_layout{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+

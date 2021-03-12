@@ -1,0 +1,30 @@
+mixin dropdown(category,ert)
+    .dropdown-list__item(id=ert)
+        p.dropdown-list__name=category
+        //- .dropdown-list__control-elements  
+        .dropdown-list__minus.dropdown-list__ctrl.inactiveColor
+            span -
+        .dropdown-list__value 
+            span.value_int 0
+        .dropdown-list__plus.dropdown-list__ctrl
+            span +
+.dropDownList.text-field
+    .text-field__name DROPDOWN
+    
+    input.text-field__input-field.dropDownList__input-field(
+        type='text'
+        name='email-input'
+        placeholder='Сколько гостей'
+    )     
+    span.dropDownList__arrow.material-icons expand_more
+      
+    .text-field__item-wrap.hidden    
+        +dropdown('ВЗРОСЛЫЕ', 'adults')  
+        +dropdown('ДЕТИ', 'children')   
+        +dropdown('МЛАДЕНЦЫ', 'babies') 
+        .dropDownList__btns.clearfix
+            .dropDownList__clear.hidden Очистить
+            .dropDownList__accept Применить
+
+     
+    //- span.material-icons settings_input_svideo так вызфываем иконку из шрифта

@@ -1,0 +1,26 @@
+
+//-.color-block-wrap
+    .color-block-wrap__color-block-container
+        .color-block-wrap__color-block-info
+            .color-block-wrap__color-block(style ="background color")
+            .color-block-wrap__color-info
+                h2.color-block-wrap__color-name Dark Shade 100%
+                p.color-block-wrap__color-code #1F2041 
+                
+.color-block-wrap
+    .color-block-wrap__color-block-container
+        mixin color-block(color, name, code)
+            .color-block-wrap__color-block-info
+                .color-block-wrap__color-block(style =`background-color: ${color}`)
+                .color-block-wrap__color-info
+                    h2.color-block-wrap__color-name= name
+                    p.color-block-wrap__color-code= code
+        
+
+        +color-block("#1F2041","Dark Shade 100%","#1F2041")
+        +color-block("#575871","Dark Shade 75%","#575871")
+        +color-block("#8F90A0","Dark Shade 50%","#8F90A0")
+        +color-block("#C7C7CF","Dark Shade 25%","#C7C7CF")
+        +color-block("#F3F4F5","Dark Shade 5%","#F3F4F5")
+        +color-block("#BC9CFF","Purple","#BC9CFF")
+        +color-block("#6FCF97", "Green", "#6FCF97" )
